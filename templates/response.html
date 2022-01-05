@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/response.css' %}">
+    <title>Response</title>
+</head>
+
+<body class="container">
+    <h1>Repos related to {{keyword}}</h1>
+
+    {% if response == 0 %}
+    <h2>Nothing found related to {{keyword}}</h2>
+    {% else %}
+    <p>{{result}} repository results</p>
+    {% for i in response %}
+    <a href={{i.html_url}}>{{i.full_name}}</a>
+    <p>{{i.description}}</p>
+    {% endfor %}
+    {% endif %}
+</body>
+
+</html>

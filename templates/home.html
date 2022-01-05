@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+    <title>Telusko</title>
+</head>
+
+<body class="container">
+    <h1>Repo fetching app from github</h1>
+    <div class="form_input">
+        <form action="response" method="post">
+
+            {% csrf_token %}
+
+            <input autocomplete="off" name="keyword" placeholder="Enter keyword" class="input"><br />
+            <input type="submit" class="submit" />
+        </form>
+    </div>
+</body>
+
+</html>

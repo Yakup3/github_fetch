@@ -1,0 +1,30 @@
+.container{
+    background: #A1A7C8;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+    width: 50%;
+}
+
+p{
+    text-align: left;
+    font-size: 5mm;
+    width: 50%;
+    margin-top: 0;
+}
+
+a{
+    text-align: left;
+    width: 50%;
+    font-size: 7mm;
+}

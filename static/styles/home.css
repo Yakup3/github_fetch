@@ -1,0 +1,30 @@
+.container{
+    background: #A1A7C8;
+    align-items: center;
+}
+  
+h1{
+    text-align: center;
+}
+ 
+.form_input{
+    background: #A1A7C8;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+  
+.input{
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+  
+.submit{
+    margin-top: 10px;
+    margin-left: 55px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #393E46;
+    color: #EEEEEE;
+}
